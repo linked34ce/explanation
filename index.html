@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>システムの利用方法</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
@@ -74,7 +75,7 @@
         </div>
         <h2 id="main" class="my-3">3. トップページ</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/main.jpg">
             <p>
                 ・「登録情報」から、<a href="#config">登録情報の確認と変更</a>を行うことができます。<br><br>
                 ・「ログアウト」を押すと、システムからログアウトします。<br><br>
@@ -84,7 +85,7 @@
         </div>
         <h2 id="config" class="my-3">4. 登録情報の確認と変更</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/config.jpeg">
             <p>
                 ・各種登録情報が確認できます。<br>
                 ・表示名は、デフォルトではユーザIDが設定されています。<br><br>
@@ -95,40 +96,57 @@
         </div>
         <h2 id="rally" class="my-3">5. フォトラリー</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/rally_1.jpg">
             <p>
                 ・各種聖地の巡礼状況を見ることができます。<br><br>
                 ・ページ上部のボタンで表示する聖地を絞り込むことができます。<br><br>
                 ・「画像ありでチェックイン」した聖地は、直近に撮影した写真が表示されます。<br><br>
                 ・「詳細」を押すとその聖地の<a href="#detail">詳細ページ</a>に移動し、聖地にチェックインできます。<br><br>
-                ・聖地を1回以上訪問した場合、「Tweet」を押すと画像付きのツイートをすることができます。<br><br>
-                ・聖地を1回以上訪問した場合、「投稿」を押すとシステム上で画像とコメントを投稿できます。<br><br>
-                ・「もどる」ボタンで<a href="#main">トップページ</a>に戻ります。
+                ・「もどる」ボタンで<a href="#main">トップページ</a>に戻ります。<br><br>
+            </p>
+            <img src="images/rally_2.jpg">
+            <p>
+                ・聖地を1回以上訪問した場合、「Tweet」ボタンを押すと画像付きのツイートをすることができます。<br><br>
+            </p>
+            <img src="images/rally_3.jpg">
+            <p>
+                ・聖地を1回以上訪問した場合、「投稿」ボタンを押すとシステム上で画像とコメントを投稿できます。
             </p>
         </div>
         <h2 id="detail" class="my-3">6. 各聖地の詳細</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/detail_1.jpg">
             <p>
                 ・聖地へのチェックインはこのページから行います。<br><br>
                 ・「マップを表示」を押すと、聖地を<a href="#map">マップ</a>上に表示できます。<br><br>
                 ・「現在地からの距離」が50m以内の時、チェックインできます。<br><br>
-                ・「写真ありでチェックイン」をタップして「写真を選択」を押すと、カメラが起動します。<br><br>
-                ・そのまま写真を撮影し、「はい」を押すとチェックインできます。<br><br>
-                ・各聖地に初めて「写真ありでチェックイン」すると、歌詞が解放されていきます。<br><br>
-                ・「写真なしでチェックイン」をタップして「はい」を押すと、写真を撮影しないでチェックインできます。<br><br>
-                ・聖地の概要やアニメでの登場シーンの説明が記載されています。<br><br>
-                ・「最寄りの聖地」は、直線距離が近い他の聖地を上位3つまで表示します。聖地名をタップすると、その聖地の<a href="#detail">詳細ページ</a>に移動します。<br><br>
                 ・画面最上部の左右のボタンから、前後の番号の聖地の詳細ページに移動できます。<br><br>
-                ・「もどる」ボタンで<a href="#main">トップページ</a>に戻ります。<br><br>
-                ⚠️ チェックインと現在地からの距離の表示には位置情報が必須です。<br><br>
-                ⚠️ 地下鉄構内などでは、位置情報がうまく取得できません。<br><br>
-                ⚠️ 取得する位置情報は完全ではないため、実際の距離とのずれが生じることがあります。
+                ・「もどる」ボタンで<a href="#rally">フォトラリー</a>のページに戻ります。<br><br>
             </p>
+            <img src="images/detail_2.jpg">
+            <p>
+                ・「写真ありでチェックイン」をタップして「ファイルを選択」を押すと、カメラが起動します。<br><br>
+                ・そのまま写真を撮影し、「はい」を押すとチェックインできます。<br><br>
+                ・各聖地に初めて「写真ありでチェックイン」すると、新たな歌詞が解放されます。<br><br>
+                ・「写真なしでチェックイン」をタップして「はい」を押すと、写真を撮影しないでチェックインできます。<br><br>
+            </p>
+            </p>
+                ⚠️ チェックインと現在地からの距離の表示には、位置情報が必須です。<br><br>
+                ⚠️ 地下鉄構内などでは、位置情報がうまく取得できません。<br><br>
+                ⚠️ 取得する位置情報は完全ではないため、実際の距離とのずれが生じることがあります。<br><br>
+            </p>
+            <img src="images/detail_3.jpg">
+            <p>
+                ・聖地の概要やアニメでの登場シーンの説明が記載されています。<br><br>
+            </p>
+            <img src="images/detail_4.jpg">
+            <p>
+                ・「最寄りの聖地」は、直線距離が近い他の聖地を上位3つまで表示します。<br><br>
+                ・聖地名をタップすると、その聖地の<a href="#detail">詳細ページ</a>に移動します。
         </div>
         <h2 id="map" class="my-3">7. マップ</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/map.jpg">
             <p>
                 ・すべての聖地がマップ上で確認できます。<br><br>
                 ・聖地の<a href="#detail">詳細ページ</a>からマップを表示すると、その聖地が中心に表示されます。<br><br>
@@ -144,7 +162,7 @@
         </div>
         <h2 id="lyrics" class="my-3">8. 歌詞あつめ</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/lyrics.jpg">
             <p>
                 ・<a href="#detail">詳細ページ</a>から、各聖地に「写真ありでチェックイン」すると、ランダムに歌詞が解放されていきます。<br><br>
                 ・歌詞は2曲分あり、「歌詞あつめ率」から歌詞がどれだけ解放されたかがわかります。<br><br>
@@ -154,16 +172,19 @@
         </div>
         <h2 id="posts" class="my-3">9. みんなの投稿</h2>
         <div class="m-4">
-            <img src="">
+            <img src="images/posts.jpg">
             <p>
                 ・<a href="#rally">フォトラリー</a>のページからの投稿が、新しい順に表示されます。<br><br>
                 ・自分以外の他のユーザの投稿も閲覧できます。<br><br>
                 ・ユーザの名前をタップすると、そのユーザのプロフィールを確認できます。<br><br>
                 ・聖地名をタップすると、その聖地の<a href="#detail">詳細ページ</a>に移動します。<br><br>
-                ・「次のページへ」や「前のページへ」を押すと、新しい投稿や古い投稿を見ることができます。<br><br>
                 ・各ページで、投稿が20件ずつ表示されます。<br><br>
+                ・「次のページへ」を押すと、次の20件が表示されます。<br><br>
+                ・「前のページへ」を押すと、前の20件が表示されます。<br><br>
                 ・「もどる」ボタンで<a href="#main">トップページ</a>に戻ります。<br><br>
             </p>
         </div>
+
+        <a href="#" class="btn btn-outline-primary">ページの先頭へ</a>
     </div>
 </body>
